@@ -1,0 +1,188 @@
+{
+  "@context" : {
+    "Amount" : {
+      "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Amount",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "Police" : {
+      "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Police"
+    },
+    "War" : {
+      "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#War"
+    },
+    "Country" : {
+      "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Country"
+    },
+    "CityOf" : {
+      "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#CityOf",
+      "@type" : "@id"
+    },
+    "Enemy" : {
+      "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Enemy",
+      "@type" : "@id"
+    },
+    "WorkIn" : {
+      "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#WorkIn",
+      "@type" : "@id"
+    },
+    "District" : {
+      "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#District"
+    },
+    "Object" : {
+      "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Object"
+    },
+    "AnimalPropertyOf" : {
+      "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#AnimalPropertyOf",
+      "@type" : "@id"
+    },
+    "GangsterFamily" : {
+      "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#GangsterFamily"
+    },
+    "DecoratedWith" : {
+      "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#DecoratedWith",
+      "@type" : "@id"
+    },
+    "Location" : {
+      "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Location",
+      "@type" : "@id"
+    },
+    "Weapon" : {
+      "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Weapon"
+    },
+    "Events" : {
+      "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Events"
+    },
+    "Animal" : {
+      "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Animal"
+    },
+    "HorseRaceWinner" : {
+      "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#HorseRaceWinner",
+      "@type" : "@id"
+    },
+    "WarObject" : {
+      "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#WarObject"
+    },
+    "Person" : {
+      "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Person"
+    },
+    "MachineGun" : {
+      "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#MachineGun"
+    },
+    "Gangster" : {
+      "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Gangster"
+    },
+    "Sindicalist" : {
+      "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Sindicalist"
+    },
+    "Agent" : {
+      "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Agent"
+    },
+    "LocationCity" : {
+      "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#LocationCity",
+      "@type" : "@id"
+    },
+    "DistritctOf" : {
+      "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#DistritctOf",
+      "@type" : "@id"
+    },
+    "Family" : {
+      "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Family"
+    },
+    "Workplace" : {
+      "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Workplace"
+    },
+    "RaceWon" : {
+      "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#RaceWon",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "MemberOfFamily" : {
+      "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#MemberOfFamily",
+      "@type" : "@id"
+    },
+    "Horse_race" : {
+      "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Horse_race"
+    },
+    "knows" : {
+      "@id" : "http://xmlns.com/foaf/0.1/knows",
+      "@type" : "@id"
+    },
+    "Content" : {
+      "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Content",
+      "@type" : "@id"
+    },
+    "DateInit" : {
+      "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#DateInit",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "Inspector" : {
+      "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Inspector"
+    },
+    "BossOfFamily" : {
+      "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#BossOfFamily",
+      "@type" : "@id"
+    },
+    "LocationRobbery" : {
+      "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#LocationRobbery",
+      "@type" : "@id"
+    },
+    "LivingBeing" : {
+      "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#LivingBeing"
+    },
+    "City" : {
+      "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#City"
+    },
+    "WarService" : {
+      "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#WarService",
+      "@type" : "@id"
+    },
+    "InvestigatedBy" : {
+      "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#InvestigatedBy",
+      "@type" : "@id"
+    },
+    "DateEnd" : {
+      "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#DateEnd",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "ControledBy" : {
+      "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ControledBy",
+      "@type" : "@id"
+    },
+    "Medal" : {
+      "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Medal"
+    },
+    "Job" : {
+      "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Job"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "BrotherOf" : {
+      "@id" : "http://cedric.cnam.fr/isid/ontologies/PersonLink.owl#BrotherOf"
+    },
+    "Horse" : {
+      "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Horse"
+    },
+    "Munition" : {
+      "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Munition"
+    },
+    "Factory" : {
+      "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Factory"
+    },
+    "Homme" : {
+      "@id" : "http://cedric.cnam.fr/isid/ontologies/PersonLink.owl#Homme"
+    },
+    "StolenBy" : {
+      "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#StolenBy",
+      "@type" : "@id"
+    },
+    "Personne" : {
+      "@id" : "http://cedric.cnam.fr/isid/ontologies/PersonLink.owl#Personne"
+    },
+    "Stealing" : {
+      "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Stealing"
+    },
+    "autors" : {
+      "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#autors"
+    }
+  }
+}

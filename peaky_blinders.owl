@@ -37,6 +37,12 @@
     
 
 
+    <!-- http://cedric.cnam.fr/isid/ontologies/PersonLink.owl#BrotherOf -->
+
+    <owl:AnnotationProperty rdf:about="http://cedric.cnam.fr/isid/ontologies/PersonLink.owl#BrotherOf"/>
+    
+
+
     <!-- http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#autors -->
 
     <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#autors"/>
@@ -548,10 +554,10 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ArthurShelby">
         <rdf:type rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Gangster"/>
-        <PersonLink:BrotherOf rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#FinnShelby"/>
-        <PersonLink:BrotherOf rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ThomasShelby"/>
         <peaky-blinders:MemberOfFamily rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#PeakyBlinders"/>
         <peaky-blinders:WarService rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#FirstWorldWar"/>
+        <PersonLink:BrotherOf rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#FinnShelby"/>
+        <PersonLink:BrotherOf rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ThomasShelby"/>
         <rdfs:comment>Arthur es el hermano mayor de la familia Shelby.</rdfs:comment>
     </owl:NamedIndividual>
     
@@ -607,9 +613,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#FinnShelby">
         <rdf:type rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Person"/>
+        <peaky-blinders:MemberOfFamily rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#PeakyBlinders"/>
         <PersonLink:BrotherOf rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ArthurShelby"/>
         <PersonLink:BrotherOf rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ThomasShelby"/>
-        <peaky-blinders:MemberOfFamily rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#PeakyBlinders"/>
         <rdfs:comment>Miembro de la familia Peaky Blinders, hermano de Arthur y Thomas</rdfs:comment>
     </owl:NamedIndividual>
     
@@ -728,10 +734,10 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ThomasShelby">
         <rdf:type rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Gangster"/>
-        <PersonLink:BrotherOf rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ArthurShelby"/>
-        <PersonLink:BrotherOf rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#FinnShelby"/>
         <peaky-blinders:DecoratedWith rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ValorMedal"/>
         <peaky-blinders:MemberOfFamily rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#PeakyBlinders"/>
+        <PersonLink:BrotherOf rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ArthurShelby"/>
+        <PersonLink:BrotherOf rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#FinnShelby"/>
         <rdfs:comment>Cabecilla de la familia Peaky Blinders</rdfs:comment>
     </owl:NamedIndividual>
     

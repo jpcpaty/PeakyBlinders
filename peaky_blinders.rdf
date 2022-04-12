@@ -67,6 +67,7 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Animal"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Family"/>
         <rdfs:comment>Representa la relación de propiedad del animal</rdfs:comment>
+        <rdfs:label>Animal Property Of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -78,6 +79,7 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Family"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Person"/>
         <rdfs:comment>Representa la relación de una familia y el cabecilla de esta</rdfs:comment>
+        <rdfs:label>Boss Of Family</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -89,6 +91,7 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#City"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Country"/>
         <rdfs:comment>representa la relación de una ciudad y el país al que pertenece</rdfs:comment>
+        <rdfs:label>City Of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -96,8 +99,34 @@
     <!-- http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Content -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Content">
-        <rdfs:range rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Object"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:comment>Representa la relación entre un objeto y el contenido de este</rdfs:comment>
+        <rdfs:label>Content</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ContentObject -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ContentObject">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Content"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Object"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Object"/>
+        <rdfs:comment>Representa el contenido de un objeto</rdfs:comment>
+        <rdfs:label>Content Object</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ContentRobery -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ContentRobery">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Content"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Stealing"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Object"/>
+        <rdfs:comment>Representa el contenido de un robo</rdfs:comment>
+        <rdfs:label>Content Robery</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -109,6 +138,7 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#City"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Family"/>
         <rdfs:comment>Representa la relación de control de una ciudad por una familia</rdfs:comment>
+        <rdfs:label>Controled By</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -119,6 +149,7 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Person"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Medal"/>
         <rdfs:comment>Representa la relación de condecoración a una persona</rdfs:comment>
+        <rdfs:label>Decorated With</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -130,6 +161,7 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#District"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#City"/>
         <rdfs:comment>Representa la relación de pertenencia de un distrito a una ciudad</rdfs:comment>
+        <rdfs:label>District Of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -140,6 +172,8 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdfs:domain rdf:resource="http://cedric.cnam.fr/isid/ontologies/PersonLink.owl#Personne"/>
         <rdfs:range rdf:resource="http://cedric.cnam.fr/isid/ontologies/PersonLink.owl#Personne"/>
+        <rdfs:comment>Representa una relación de enemistad</rdfs:comment>
+        <rdfs:label>Enemy</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -148,9 +182,10 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#HorseRaceWinner">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Horse_race"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#HorseRace"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Horse"/>
         <rdfs:comment>Representa la relación del caballo ganador en una carrera de caballos</rdfs:comment>
+        <rdfs:label>Horse Race Winner</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -158,16 +193,23 @@
     <!-- http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#InvestigatedBy -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#InvestigatedBy">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Stealing"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Police"/>
         <rdfs:comment>Representa la relación de investigación de un robo por parte de un policia.</rdfs:comment>
+        <rdfs:label>Investigated By</rdfs:label>
     </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Location -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Location"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Location">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>Representa una localización</rdfs:comment>
+        <rdfs:label>Location</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
@@ -175,7 +217,10 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#LocationCity">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Location"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#City"/>
+        <rdfs:comment>Localización de una ciudad</rdfs:comment>
+        <rdfs:label>Location City</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -186,6 +231,8 @@
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Location"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Object"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Workplace"/>
+        <rdfs:comment>Representa la localización de un robo</rdfs:comment>
+        <rdfs:label>Location Robbery</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -196,6 +243,7 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Person"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Family"/>
         <rdfs:comment>Representa la relación de pertenencia de una persona a una familia.</rdfs:comment>
+        <rdfs:label>Member Of Family</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -207,6 +255,7 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Stealing"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Family"/>
         <rdfs:comment>Representa quien perpetró un robo</rdfs:comment>
+        <rdfs:label>Stolen By</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -217,6 +266,7 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Person"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#War"/>
         <rdfs:comment>Indica que personas han participado en la guerra</rdfs:comment>
+        <rdfs:label>War Service</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -227,6 +277,7 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Person"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Workplace"/>
         <rdfs:comment>indica el lugar de trabajo de una persona</rdfs:comment>
+        <rdfs:label>Work In</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -247,6 +298,8 @@
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Amount">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Object"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment>Representa una cantidad</rdfs:comment>
+        <rdfs:label>Amount</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -255,8 +308,10 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#DateEnd">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Events"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Event"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment>Representa una fecha final</rdfs:comment>
+        <rdfs:label>Date End</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -265,8 +320,10 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#DateInit">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Events"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Event"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment>Representa una fecha de inicio</rdfs:comment>
+        <rdfs:label>Date Init</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -277,6 +334,8 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Horse"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment>Representa la cantidad de carreras ganadas</rdfs:comment>
+        <rdfs:label>Race Won</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -305,6 +364,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Agent">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Police"/>
         <rdfs:comment>Representa a un agente de campo</rdfs:comment>
+        <rdfs:label>Agent</rdfs:label>
     </owl:Class>
     
 
@@ -315,6 +375,7 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#LivingBeing"/>
         <rdfs:comment>Representa aquellas formas animales</rdfs:comment>
         <rdfs:comment>class that defines animals</rdfs:comment>
+        <rdfs:label>Animal</rdfs:label>
     </owl:Class>
     
 
@@ -324,6 +385,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#City">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Country"/>
         <rdfs:comment>Representa una ciudad en un país</rdfs:comment>
+        <rdfs:label>City</rdfs:label>
     </owl:Class>
     
 
@@ -332,6 +394,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Country">
         <rdfs:comment>Representa un país</rdfs:comment>
+        <rdfs:label>Country</rdfs:label>
     </owl:Class>
     
 
@@ -341,14 +404,16 @@
     <owl:Class rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#District">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#City"/>
         <rdfs:comment>Representa un distrito de una ciudad</rdfs:comment>
+        <rdfs:label>District</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Events -->
+    <!-- http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Event -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Events">
+    <owl:Class rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Event">
         <rdfs:comment>Representa un evento</rdfs:comment>
+        <rdfs:label>Event</rdfs:label>
     </owl:Class>
     
 
@@ -358,6 +423,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Factory">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Workplace"/>
         <rdfs:comment>Representa una fábrica</rdfs:comment>
+        <rdfs:label>Factory</rdfs:label>
     </owl:Class>
     
 
@@ -366,6 +432,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Family">
         <rdfs:comment>Representa una familia de personas</rdfs:comment>
+        <rdfs:label>Family</rdfs:label>
     </owl:Class>
     
 
@@ -375,6 +442,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Gangster">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Job"/>
         <rdfs:comment>Representa a un criminal como su dedicación principal</rdfs:comment>
+        <rdfs:label>Gangster</rdfs:label>
     </owl:Class>
     
 
@@ -384,6 +452,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#GangsterFamily">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Family"/>
         <rdfs:comment>Representa una organización criminal entorno a una familia de personas</rdfs:comment>
+        <rdfs:label>Gangster Family</rdfs:label>
     </owl:Class>
     
 
@@ -393,15 +462,17 @@
     <owl:Class rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Horse">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Animal"/>
         <rdfs:comment>Representa a los caballos</rdfs:comment>
+        <rdfs:label>Horse</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Horse_race -->
+    <!-- http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#HorseRace -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Horse_race">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Events"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#HorseRace">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Event"/>
         <rdfs:comment>Representa una carrera de caballos</rdfs:comment>
+        <rdfs:label>Horse Race</rdfs:label>
     </owl:Class>
     
 
@@ -411,6 +482,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Inspector">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Police"/>
         <rdfs:comment>Representa al jefe de los agentes de campo y al investigador principal</rdfs:comment>
+        <rdfs:label>Inspector</rdfs:label>
     </owl:Class>
     
 
@@ -419,6 +491,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Job">
         <rdfs:comment>Representa la ocupación de una persona</rdfs:comment>
+        <rdfs:label>Job</rdfs:label>
     </owl:Class>
     
 
@@ -427,6 +500,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#LivingBeing">
         <rdfs:comment>Representa las formas de vida en el planeta</rdfs:comment>
+        <rdfs:label>Living Being</rdfs:label>
     </owl:Class>
     
 
@@ -436,6 +510,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#MachineGun">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Weapon"/>
         <rdfs:comment>Representa las armas en sí</rdfs:comment>
+        <rdfs:label>Machine Gun</rdfs:label>
     </owl:Class>
     
 
@@ -446,6 +521,7 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#WarObject"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Weapon"/>
         <rdfs:comment>Representa las medallas o condecoraciones de guerra</rdfs:comment>
+        <rdfs:label>Medal</rdfs:label>
     </owl:Class>
     
 
@@ -455,6 +531,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Munition">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Weapon"/>
         <rdfs:comment>Representa la munición que utilizan las armas</rdfs:comment>
+        <rdfs:label>Munition</rdfs:label>
     </owl:Class>
     
 
@@ -463,6 +540,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Object">
         <rdfs:comment>Representa objetos</rdfs:comment>
+        <rdfs:label>Object</rdfs:label>
     </owl:Class>
     
 
@@ -472,7 +550,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Person">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#LivingBeing"/>
         <rdfs:comment>Representa a las personas</rdfs:comment>
-        <rdfs:comment>class that defines people</rdfs:comment>
+        <rdfs:label>Person</rdfs:label>
     </owl:Class>
     
 
@@ -482,6 +560,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Police">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Job"/>
         <rdfs:comment>Representa a un agente de la autoridad</rdfs:comment>
+        <rdfs:label>Police</rdfs:label>
     </owl:Class>
     
 
@@ -491,6 +570,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Sindicalist">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Job"/>
         <rdfs:comment>Representa a un trabajador que lucha por los derechos de los trabajadores</rdfs:comment>
+        <rdfs:label>Sindicalist</rdfs:label>
     </owl:Class>
     
 
@@ -498,8 +578,9 @@
     <!-- http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Stealing -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Stealing">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Events"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Event"/>
         <rdfs:comment>Representa un robo</rdfs:comment>
+        <rdfs:label>Stealing</rdfs:label>
     </owl:Class>
     
 
@@ -507,8 +588,9 @@
     <!-- http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#War -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#War">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Events"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Event"/>
         <rdfs:comment>Representa una guerra</rdfs:comment>
+        <rdfs:label>War</rdfs:label>
     </owl:Class>
     
 
@@ -518,6 +600,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#WarObject">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Object"/>
         <rdfs:comment>Representa objetos de guerra</rdfs:comment>
+        <rdfs:label>War Object</rdfs:label>
     </owl:Class>
     
 
@@ -527,6 +610,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Weapon">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#WarObject"/>
         <rdfs:comment>Representa las armas</rdfs:comment>
+        <rdfs:label>Weapon</rdfs:label>
     </owl:Class>
     
 
@@ -535,6 +619,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Workplace">
         <rdfs:comment>Representa un lugar de trabajo</rdfs:comment>
+        <rdfs:label>Workplace</rdfs:label>
     </owl:Class>
     
 
@@ -600,8 +685,9 @@
     <!-- http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#FactoryRobbery -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#FactoryRobbery">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Event"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Stealing"/>
-        <peaky-blinders:Content rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#LibiaShipping"/>
+        <peaky-blinders:ContentRobery rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#LibiaShipping"/>
         <peaky-blinders:InvestigatedBy rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ChesterCampbell"/>
         <peaky-blinders:StolenBy rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#PeakyBlinders"/>
         <rdfs:comment>Representa el robo de armas</rdfs:comment>
@@ -656,7 +742,7 @@
     <!-- http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#KemptonHorseRace -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#KemptonHorseRace">
-        <rdf:type rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Horse_race"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#HorseRace"/>
         <peaky-blinders:HorseRaceWinner rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#MonahamBoy"/>
         <peaky-blinders:DateInit rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1921-09-03T14:00:00</peaky-blinders:DateInit>
         <rdfs:comment>Representa el evento de la carrera de caballos en el hipodromo de Kempton</rdfs:comment>
@@ -668,9 +754,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#LibiaShipping">
         <rdf:type rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#WarObject"/>
-        <peaky-blinders:Content rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Guns"/>
-        <peaky-blinders:Content rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#LouisMachineGun"/>
-        <peaky-blinders:Content rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#MunitionTape"/>
+        <peaky-blinders:ContentObject rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Guns"/>
+        <peaky-blinders:ContentObject rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#LouisMachineGun"/>
+        <peaky-blinders:ContentObject rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#MunitionTape"/>
         <peaky-blinders:LocationRobbery rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#BSA"/>
         <rdfs:comment>Representa el pedido de armas preparado para envio a Libia desde la fabrica BSA</rdfs:comment>
     </owl:NamedIndividual>
@@ -773,7 +859,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Country"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Events"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Event"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Family"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#LivingBeing"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Object"/>

@@ -99,6 +99,7 @@
     <!-- http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Content -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Content">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:comment>Representa la relación entre un objeto y el contenido de este</rdfs:comment>
@@ -111,6 +112,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ContentObject">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Content"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Object"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Object"/>
         <rdfs:comment>Representa el contenido de un objeto</rdfs:comment>
@@ -205,6 +207,7 @@
     <!-- http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Location -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Location">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:comment>Representa una localización</rdfs:comment>

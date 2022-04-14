@@ -107,38 +107,10 @@
 
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Content">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Object"/>
         <rdfs:comment>Representa la relación entre un objeto y el contenido de este</rdfs:comment>
         <rdfs:label>Content</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ContentObject -->
-
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ContentObject">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Content"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Object"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Object"/>
-        <rdfs:comment>Representa el contenido de un objeto</rdfs:comment>
-        <rdfs:label>Content Object</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ContentRobery -->
-
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ContentRobery">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Content"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Stealing"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Object"/>
-        <rdfs:comment>Representa el contenido de un robo</rdfs:comment>
-        <rdfs:label>Content Robery</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -199,7 +171,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#HorseRaceWinner">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#HorseRace"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Horse_race"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Horse"/>
         <rdfs:comment>Representa la relación del caballo ganador en una carrera de caballos</rdfs:comment>
         <rdfs:label>Horse Race Winner</rdfs:label>
@@ -211,7 +183,6 @@
 
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#InvestigatedBy">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Stealing"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Police"/>
         <rdfs:comment>Representa la relación de investigación de un robo por parte de un policia.</rdfs:comment>
@@ -224,11 +195,8 @@
 
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Location">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:comment>Representa una localización</rdfs:comment>
-        <rdfs:label>Location</rdfs:label>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Location"/>
     </owl:ObjectProperty>
     
 
@@ -240,7 +208,7 @@
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Location"/>
         <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#City"/>
-        <rdfs:comment>Localización de una ciudad</rdfs:comment>
+        <rdfs:comment>Representa una localización de ciudad</rdfs:comment>
         <rdfs:label>Location City</rdfs:label>
     </owl:ObjectProperty>
     
@@ -253,7 +221,7 @@
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Location"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Object"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Workplace"/>
-        <rdfs:comment>Representa la localización de un robo</rdfs:comment>
+        <rdfs:comment>Representa una localización de un robo</rdfs:comment>
         <rdfs:label>Location Robbery</rdfs:label>
     </owl:ObjectProperty>
     
@@ -326,8 +294,8 @@
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Amount">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Object"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-        <rdfs:comment>Representa una cantidad</rdfs:comment>
         <rdfs:label>Amount</rdfs:label>
+        <rdfs:label>Indica una cantidad</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -339,7 +307,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Event"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-        <rdfs:comment>Representa una fecha final</rdfs:comment>
+        <rdfs:comment>Indica una fecha final</rdfs:comment>
         <rdfs:label>Date End</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -352,7 +320,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Event"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-        <rdfs:comment>Representa una fecha de inicio</rdfs:comment>
+        <rdfs:comment>Indica una fecha de inicio</rdfs:comment>
         <rdfs:label>Date Init</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -365,7 +333,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Horse"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-        <rdfs:comment>Representa la cantidad de carreras ganadas</rdfs:comment>
+        <rdfs:comment>Indica el número de carreras ganadas</rdfs:comment>
         <rdfs:label>Race Won</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -409,7 +377,6 @@
     <owl:Class rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Animal">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#LivingBeing"/>
         <rdfs:comment>Representa aquellas formas animales</rdfs:comment>
-        <rdfs:comment>class that defines animals</rdfs:comment>
         <rdfs:label>Animal</rdfs:label>
     </owl:Class>
     
@@ -430,6 +397,7 @@
 
 
     <owl:Class rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Country">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Location"/>
         <rdfs:comment>Representa un país</rdfs:comment>
         <rdfs:label>Country</rdfs:label>
     </owl:Class>
@@ -511,10 +479,10 @@
     
 
 
-    <!-- http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#HorseRace -->
+    <!-- http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Horse_race -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#HorseRace">
+    <owl:Class rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Horse_race">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Event"/>
         <rdfs:comment>Representa una carrera de caballos</rdfs:comment>
         <rdfs:label>Horse Race</rdfs:label>
@@ -550,6 +518,13 @@
         <rdfs:comment>Representa las formas de vida en el planeta</rdfs:comment>
         <rdfs:label>Living Being</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Location -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Location"/>
     
 
 
@@ -678,6 +653,7 @@
 
 
     <owl:Class rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Workplace">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Location"/>
         <rdfs:comment>Representa un lugar de trabajo</rdfs:comment>
         <rdfs:label>Workplace</rdfs:label>
     </owl:Class>
@@ -706,6 +682,7 @@
         <PersonLink:BrotherOf rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#FinnShelby"/>
         <PersonLink:BrotherOf rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ThomasShelby"/>
         <rdfs:comment>Arthur es el hermano mayor de la familia Shelby.</rdfs:comment>
+        <rdfs:label>Arthur Shelby</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -717,6 +694,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Factory"/>
         <LocationCity rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Birmingham"/>
         <rdfs:comment>Fabrica donde se almacenaba el pedido de armas y donde trabaja el sindicalista Freddie Thorne</rdfs:comment>
+        <rdfs:label>BSA</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -729,6 +707,7 @@
         <CityOf rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#UnitedKingdom"/>
         <ControledBy rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#PeakyBlinders"/>
         <rdfs:comment>Ciudad de inglaterra donde se desarrolla la trama.</rdfs:comment>
+        <rdfs:label>Birmingham</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -743,6 +722,7 @@
         <foaf:knows rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#FreddieThorne"/>
         <foaf:knows rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ThomasShelby"/>
         <rdfs:comment>Investigador de la policia enviado a Birmingham para esclarecer el robo de las armas y limpiar la ciudad de delincuencia.</rdfs:comment>
+        <rdfs:label>Chester Campbell</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -751,12 +731,12 @@
 
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#FactoryRobbery">
-        <rdf:type rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Event"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Stealing"/>
-        <ContentRobery rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#LibiaShipping"/>
+        <Content rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#LibiaShipping"/>
         <InvestigatedBy rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ChesterCampbell"/>
         <StolenBy rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#PeakyBlinders"/>
         <rdfs:comment>Representa el robo de armas</rdfs:comment>
+        <rdfs:label>Factory Robbery</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -770,6 +750,7 @@
         <PersonLink:BrotherOf rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ArthurShelby"/>
         <PersonLink:BrotherOf rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ThomasShelby"/>
         <rdfs:comment>Miembro de la familia Peaky Blinders, hermano de Arthur y Thomas</rdfs:comment>
+        <rdfs:label>Finn Shelby</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -782,6 +763,7 @@
         <DateEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1918-11-11T00:00:00</DateEnd>
         <DateInit rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1914-07-28T00:00:00</DateInit>
         <rdfs:comment>Representa el evento de la primera guerra mundial donde participaron Arthur, Thomas y Freddie</rdfs:comment>
+        <rdfs:label>First World War</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -794,17 +776,19 @@
         <WarService rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#FirstWorldWar"/>
         <WorkIn rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#BSA"/>
         <rdfs:comment>Sindicalista y trabajador de la fábrica BSA</rdfs:comment>
+        <rdfs:label>Freddie Thorne</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Guns -->
+    <!-- http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Gun -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Guns">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Gun">
         <rdf:type rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#MachineGun"/>
         <Amount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</Amount>
         <rdfs:comment>Pistolas del pedido de armas</rdfs:comment>
+        <rdfs:label>Gun</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -813,10 +797,11 @@
 
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#KemptonHorseRace">
-        <rdf:type rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#HorseRace"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Horse_race"/>
         <HorseRaceWinner rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#MonahamBoy"/>
         <DateInit rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1921-09-03T14:00:00</DateInit>
         <rdfs:comment>Representa el evento de la carrera de caballos en el hipodromo de Kempton</rdfs:comment>
+        <rdfs:label>Kempton Horse Race</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -826,11 +811,12 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#LibiaShipping">
         <rdf:type rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#WarObject"/>
-        <ContentObject rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Guns"/>
-        <ContentObject rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#LouisMachineGun"/>
-        <ContentObject rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#MunitionTape"/>
+        <Content rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Gun"/>
+        <Content rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#LouisMachineGun"/>
+        <Content rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#MunitionTape"/>
         <LocationRobbery rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#BSA"/>
         <rdfs:comment>Representa el pedido de armas preparado para envio a Libia desde la fabrica BSA</rdfs:comment>
+        <rdfs:label>Libia Shipping</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -842,6 +828,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#MachineGun"/>
         <Amount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</Amount>
         <rdfs:comment>Ametralladoras del pedido de armas</rdfs:comment>
+        <rdfs:label>Louis Machine Gun</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -854,6 +841,7 @@
         <AnimalPropertyOf rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#PeakyBlinders"/>
         <RaceWon rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</RaceWon>
         <rdfs:comment>Caballo de carreras de la familia Peaky Blinders</rdfs:comment>
+        <rdfs:label>Monaham Boy</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -865,6 +853,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Munition"/>
         <Amount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10000</Amount>
         <rdfs:comment>Cintas de munición del pedido de armas</rdfs:comment>
+        <rdfs:label>Munition Tape</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -878,6 +867,7 @@
         <Location rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Birmingham"/>
         <Location rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#SmallHeath"/>
         <rdfs:comment>Familia de gangsters ubicados en Birmingham</rdfs:comment>
+        <rdfs:label>Peaky Blinders</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -889,6 +879,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#District"/>
         <DistritctOf rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Birmingham"/>
         <rdfs:comment>Barrio desde donde operan principalmente los Peaky Blinders</rdfs:comment>
+        <rdfs:label>Small Heath</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -903,6 +894,7 @@
         <PersonLink:BrotherOf rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ArthurShelby"/>
         <PersonLink:BrotherOf rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#FinnShelby"/>
         <rdfs:comment>Cabecilla de la familia Peaky Blinders</rdfs:comment>
+        <rdfs:label>Thomas Shelby</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -913,6 +905,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#UnitedKingdom">
         <rdf:type rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Country"/>
         <rdfs:comment>País donde sucede la trama</rdfs:comment>
+        <rdfs:label>United Kingdom</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -923,7 +916,24 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ValorMedal">
         <rdf:type rdf:resource="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Medal"/>
         <rdfs:comment>Medalla de reconocimiento tras participar en la guerra</rdfs:comment>
+        <rdfs:label>Valor Medal</rdfs:label>
     </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Location">
+        <rdfs:comment>Representa una localización</rdfs:comment>
+        <rdfs:label>Location</rdfs:label>
+    </rdf:Description>
     
 
 

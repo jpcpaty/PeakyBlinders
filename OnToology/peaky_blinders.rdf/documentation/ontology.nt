@@ -53,28 +53,10 @@
 # 
 # http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Content
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Content> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Content> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Content> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
-<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Content> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Content> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Object> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Content> <http://www.w3.org/2000/01/rdf-schema#comment> "Representa la relación entre un objeto y el contenido de este" .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Content> <http://www.w3.org/2000/01/rdf-schema#label> "Content" .
-# 
-# http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ContentObject
-<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ContentObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ContentObject> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Content> .
-<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ContentObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
-<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ContentObject> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Object> .
-<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ContentObject> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Object> .
-<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ContentObject> <http://www.w3.org/2000/01/rdf-schema#comment> "Representa el contenido de un objeto" .
-<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ContentObject> <http://www.w3.org/2000/01/rdf-schema#label> "Content Object" .
-# 
-# http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ContentRobery
-<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ContentRobery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ContentRobery> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Content> .
-<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ContentRobery> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Stealing> .
-<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ContentRobery> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Object> .
-<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ContentRobery> <http://www.w3.org/2000/01/rdf-schema#comment> "Representa el contenido de un robo" .
-<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ContentRobery> <http://www.w3.org/2000/01/rdf-schema#label> "Content Robery" .
 # 
 # http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ControledBy
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ControledBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -110,14 +92,13 @@
 # http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#HorseRaceWinner
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#HorseRaceWinner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#HorseRaceWinner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#HorseRaceWinner> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#HorseRace> .
+<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#HorseRaceWinner> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Horse_race> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#HorseRaceWinner> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Horse> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#HorseRaceWinner> <http://www.w3.org/2000/01/rdf-schema#comment> "Representa la relación del caballo ganador en una carrera de caballos" .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#HorseRaceWinner> <http://www.w3.org/2000/01/rdf-schema#label> "Horse Race Winner" .
 # 
 # http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#InvestigatedBy
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#InvestigatedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#InvestigatedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#InvestigatedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Stealing> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#InvestigatedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Police> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#InvestigatedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Representa la relación de investigación de un robo por parte de un policia." .
@@ -125,18 +106,15 @@
 # 
 # http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Location
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Location> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
-<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Location> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Thing> .
-<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Location> <http://www.w3.org/2000/01/rdf-schema#comment> "Representa una localización" .
-<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Location> <http://www.w3.org/2000/01/rdf-schema#label> "Location" .
+<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Location> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Location> .
 # 
 # http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#LocationCity
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#LocationCity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#LocationCity> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Location> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#LocationCity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#LocationCity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#City> .
-<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#LocationCity> <http://www.w3.org/2000/01/rdf-schema#comment> "Localización de una ciudad" .
+<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#LocationCity> <http://www.w3.org/2000/01/rdf-schema#comment> "Representa una localización de ciudad" .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#LocationCity> <http://www.w3.org/2000/01/rdf-schema#label> "Location City" .
 # 
 # http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#LocationRobbery
@@ -144,7 +122,7 @@
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#LocationRobbery> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Location> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#LocationRobbery> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Object> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#LocationRobbery> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Workplace> .
-<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#LocationRobbery> <http://www.w3.org/2000/01/rdf-schema#comment> "Representa la localización de un robo" .
+<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#LocationRobbery> <http://www.w3.org/2000/01/rdf-schema#comment> "Representa una localización de un robo" .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#LocationRobbery> <http://www.w3.org/2000/01/rdf-schema#label> "Location Robbery" .
 # 
 # http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#MemberOfFamily
@@ -189,15 +167,15 @@
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Amount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Amount> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Object> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Amount> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
-<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Amount> <http://www.w3.org/2000/01/rdf-schema#comment> "Representa una cantidad" .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Amount> <http://www.w3.org/2000/01/rdf-schema#label> "Amount" .
+<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Amount> <http://www.w3.org/2000/01/rdf-schema#label> "Indica una cantidad" .
 # 
 # http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#DateEnd
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#DateEnd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#DateEnd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#DateEnd> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Event> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#DateEnd> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
-<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#DateEnd> <http://www.w3.org/2000/01/rdf-schema#comment> "Representa una fecha final" .
+<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#DateEnd> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica una fecha final" .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#DateEnd> <http://www.w3.org/2000/01/rdf-schema#label> "Date End" .
 # 
 # http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#DateInit
@@ -205,7 +183,7 @@
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#DateInit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#DateInit> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Event> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#DateInit> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
-<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#DateInit> <http://www.w3.org/2000/01/rdf-schema#comment> "Representa una fecha de inicio" .
+<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#DateInit> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica una fecha de inicio" .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#DateInit> <http://www.w3.org/2000/01/rdf-schema#label> "Date Init" .
 # 
 # http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#RaceWon
@@ -213,7 +191,7 @@
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#RaceWon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#RaceWon> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Horse> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#RaceWon> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
-<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#RaceWon> <http://www.w3.org/2000/01/rdf-schema#comment> "Representa la cantidad de carreras ganadas" .
+<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#RaceWon> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica el número de carreras ganadas" .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#RaceWon> <http://www.w3.org/2000/01/rdf-schema#label> "Race Won" .
 # 
 # 
@@ -238,7 +216,6 @@
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Animal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Animal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#LivingBeing> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Animal> <http://www.w3.org/2000/01/rdf-schema#comment> "Representa aquellas formas animales" .
-<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Animal> <http://www.w3.org/2000/01/rdf-schema#comment> "class that defines animals" .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Animal> <http://www.w3.org/2000/01/rdf-schema#label> "Animal" .
 # 
 # http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#City
@@ -249,6 +226,7 @@
 # 
 # http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Country
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Country> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Location> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Country> <http://www.w3.org/2000/01/rdf-schema#comment> "Representa un país" .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Country> <http://www.w3.org/2000/01/rdf-schema#label> "Country" .
 # 
@@ -292,11 +270,11 @@
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Horse> <http://www.w3.org/2000/01/rdf-schema#comment> "Representa a los caballos" .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Horse> <http://www.w3.org/2000/01/rdf-schema#label> "Horse" .
 # 
-# http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#HorseRace
-<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#HorseRace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#HorseRace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Event> .
-<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#HorseRace> <http://www.w3.org/2000/01/rdf-schema#comment> "Representa una carrera de caballos" .
-<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#HorseRace> <http://www.w3.org/2000/01/rdf-schema#label> "Horse Race" .
+# http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Horse_race
+<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Horse_race> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Horse_race> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Event> .
+<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Horse_race> <http://www.w3.org/2000/01/rdf-schema#comment> "Representa una carrera de caballos" .
+<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Horse_race> <http://www.w3.org/2000/01/rdf-schema#label> "Horse Race" .
 # 
 # http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Inspector
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Inspector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -313,6 +291,9 @@
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#LivingBeing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#LivingBeing> <http://www.w3.org/2000/01/rdf-schema#comment> "Representa las formas de vida en el planeta" .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#LivingBeing> <http://www.w3.org/2000/01/rdf-schema#label> "Living Being" .
+# 
+# http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Location
+<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#MachineGun
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#MachineGun> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -382,6 +363,7 @@
 # 
 # http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Workplace
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Workplace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Workplace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Location> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Workplace> <http://www.w3.org/2000/01/rdf-schema#comment> "Representa un lugar de trabajo" .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Workplace> <http://www.w3.org/2000/01/rdf-schema#label> "Workplace" .
 # 
@@ -402,12 +384,14 @@
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ArthurShelby> <http://cedric.cnam.fr/isid/ontologies/PersonLink.owl#BrotherOf> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#FinnShelby> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ArthurShelby> <http://cedric.cnam.fr/isid/ontologies/PersonLink.owl#BrotherOf> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ThomasShelby> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ArthurShelby> <http://www.w3.org/2000/01/rdf-schema#comment> "Arthur es el hermano mayor de la familia Shelby." .
+<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ArthurShelby> <http://www.w3.org/2000/01/rdf-schema#label> "Arthur Shelby" .
 # 
 # http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#BSA
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#BSA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#BSA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Factory> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#BSA> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#LocationCity> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Birmingham> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#BSA> <http://www.w3.org/2000/01/rdf-schema#comment> "Fabrica donde se almacenaba el pedido de armas y donde trabaja el sindicalista Freddie Thorne" .
+<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#BSA> <http://www.w3.org/2000/01/rdf-schema#label> "BSA" .
 # 
 # http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Birmingham
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Birmingham> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -415,6 +399,7 @@
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Birmingham> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#CityOf> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#UnitedKingdom> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Birmingham> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ControledBy> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#PeakyBlinders> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Birmingham> <http://www.w3.org/2000/01/rdf-schema#comment> "Ciudad de inglaterra donde se desarrolla la trama." .
+<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Birmingham> <http://www.w3.org/2000/01/rdf-schema#label> "Birmingham" .
 # 
 # http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ChesterCampbell
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ChesterCampbell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -424,15 +409,16 @@
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ChesterCampbell> <http://xmlns.com/foaf/0.1/knows> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#FreddieThorne> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ChesterCampbell> <http://xmlns.com/foaf/0.1/knows> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ThomasShelby> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ChesterCampbell> <http://www.w3.org/2000/01/rdf-schema#comment> "Investigador de la policia enviado a Birmingham para esclarecer el robo de las armas y limpiar la ciudad de delincuencia." .
+<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ChesterCampbell> <http://www.w3.org/2000/01/rdf-schema#label> "Chester Campbell" .
 # 
 # http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#FactoryRobbery
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#FactoryRobbery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#FactoryRobbery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Event> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#FactoryRobbery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Stealing> .
-<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#FactoryRobbery> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ContentRobery> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#LibiaShipping> .
+<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#FactoryRobbery> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Content> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#LibiaShipping> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#FactoryRobbery> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#InvestigatedBy> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ChesterCampbell> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#FactoryRobbery> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#StolenBy> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#PeakyBlinders> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#FactoryRobbery> <http://www.w3.org/2000/01/rdf-schema#comment> "Representa el robo de armas" .
+<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#FactoryRobbery> <http://www.w3.org/2000/01/rdf-schema#label> "Factory Robbery" .
 # 
 # http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#FinnShelby
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#FinnShelby> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -441,6 +427,7 @@
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#FinnShelby> <http://cedric.cnam.fr/isid/ontologies/PersonLink.owl#BrotherOf> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ArthurShelby> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#FinnShelby> <http://cedric.cnam.fr/isid/ontologies/PersonLink.owl#BrotherOf> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ThomasShelby> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#FinnShelby> <http://www.w3.org/2000/01/rdf-schema#comment> "Miembro de la familia Peaky Blinders, hermano de Arthur y Thomas" .
+<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#FinnShelby> <http://www.w3.org/2000/01/rdf-schema#label> "Finn Shelby" .
 # 
 # http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#FirstWorldWar
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#FirstWorldWar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -448,6 +435,7 @@
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#FirstWorldWar> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#DateEnd> "1918-11-11T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#FirstWorldWar> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#DateInit> "1914-07-28T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#FirstWorldWar> <http://www.w3.org/2000/01/rdf-schema#comment> "Representa el evento de la primera guerra mundial donde participaron Arthur, Thomas y Freddie" .
+<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#FirstWorldWar> <http://www.w3.org/2000/01/rdf-schema#label> "First World War" .
 # 
 # http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#FreddieThorne
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#FreddieThorne> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -455,34 +443,39 @@
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#FreddieThorne> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#WarService> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#FirstWorldWar> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#FreddieThorne> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#WorkIn> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#BSA> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#FreddieThorne> <http://www.w3.org/2000/01/rdf-schema#comment> "Sindicalista y trabajador de la fábrica BSA" .
+<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#FreddieThorne> <http://www.w3.org/2000/01/rdf-schema#label> "Freddie Thorne" .
 # 
-# http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Guns
-<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Guns> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Guns> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#MachineGun> .
-<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Guns> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Amount> "200"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Guns> <http://www.w3.org/2000/01/rdf-schema#comment> "Pistolas del pedido de armas" .
+# http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Gun
+<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Gun> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Gun> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#MachineGun> .
+<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Gun> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Amount> "200"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Gun> <http://www.w3.org/2000/01/rdf-schema#comment> "Pistolas del pedido de armas" .
+<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Gun> <http://www.w3.org/2000/01/rdf-schema#label> "Gun" .
 # 
 # http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#KemptonHorseRace
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#KemptonHorseRace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#KemptonHorseRace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#HorseRace> .
+<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#KemptonHorseRace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Horse_race> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#KemptonHorseRace> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#HorseRaceWinner> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#MonahamBoy> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#KemptonHorseRace> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#DateInit> "1921-09-03T14:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#KemptonHorseRace> <http://www.w3.org/2000/01/rdf-schema#comment> "Representa el evento de la carrera de caballos en el hipodromo de Kempton" .
+<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#KemptonHorseRace> <http://www.w3.org/2000/01/rdf-schema#label> "Kempton Horse Race" .
 # 
 # http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#LibiaShipping
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#LibiaShipping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#LibiaShipping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#WarObject> .
-<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#LibiaShipping> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ContentObject> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Guns> .
-<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#LibiaShipping> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ContentObject> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#LouisMachineGun> .
-<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#LibiaShipping> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ContentObject> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#MunitionTape> .
+<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#LibiaShipping> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Content> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Gun> .
+<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#LibiaShipping> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Content> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#LouisMachineGun> .
+<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#LibiaShipping> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Content> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#MunitionTape> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#LibiaShipping> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#LocationRobbery> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#BSA> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#LibiaShipping> <http://www.w3.org/2000/01/rdf-schema#comment> "Representa el pedido de armas preparado para envio a Libia desde la fabrica BSA" .
+<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#LibiaShipping> <http://www.w3.org/2000/01/rdf-schema#label> "Libia Shipping" .
 # 
 # http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#LouisMachineGun
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#LouisMachineGun> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#LouisMachineGun> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#MachineGun> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#LouisMachineGun> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Amount> "25"^^<http://www.w3.org/2001/XMLSchema#integer> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#LouisMachineGun> <http://www.w3.org/2000/01/rdf-schema#comment> "Ametralladoras del pedido de armas" .
+<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#LouisMachineGun> <http://www.w3.org/2000/01/rdf-schema#label> "Louis Machine Gun" .
 # 
 # http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#MonahamBoy
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#MonahamBoy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -490,12 +483,14 @@
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#MonahamBoy> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#AnimalPropertyOf> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#PeakyBlinders> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#MonahamBoy> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#RaceWon> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#MonahamBoy> <http://www.w3.org/2000/01/rdf-schema#comment> "Caballo de carreras de la familia Peaky Blinders" .
+<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#MonahamBoy> <http://www.w3.org/2000/01/rdf-schema#label> "Monaham Boy" .
 # 
 # http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#MunitionTape
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#MunitionTape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#MunitionTape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Munition> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#MunitionTape> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Amount> "10000"^^<http://www.w3.org/2001/XMLSchema#integer> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#MunitionTape> <http://www.w3.org/2000/01/rdf-schema#comment> "Cintas de munición del pedido de armas" .
+<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#MunitionTape> <http://www.w3.org/2000/01/rdf-schema#label> "Munition Tape" .
 # 
 # http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#PeakyBlinders
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#PeakyBlinders> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -504,12 +499,14 @@
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#PeakyBlinders> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Location> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Birmingham> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#PeakyBlinders> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Location> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#SmallHeath> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#PeakyBlinders> <http://www.w3.org/2000/01/rdf-schema#comment> "Familia de gangsters ubicados en Birmingham" .
+<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#PeakyBlinders> <http://www.w3.org/2000/01/rdf-schema#label> "Peaky Blinders" .
 # 
 # http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#SmallHeath
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#SmallHeath> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#SmallHeath> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#District> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#SmallHeath> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#DistritctOf> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Birmingham> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#SmallHeath> <http://www.w3.org/2000/01/rdf-schema#comment> "Barrio desde donde operan principalmente los Peaky Blinders" .
+<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#SmallHeath> <http://www.w3.org/2000/01/rdf-schema#label> "Small Heath" .
 # 
 # http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ThomasShelby
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ThomasShelby> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -519,16 +516,31 @@
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ThomasShelby> <http://cedric.cnam.fr/isid/ontologies/PersonLink.owl#BrotherOf> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ArthurShelby> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ThomasShelby> <http://cedric.cnam.fr/isid/ontologies/PersonLink.owl#BrotherOf> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#FinnShelby> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ThomasShelby> <http://www.w3.org/2000/01/rdf-schema#comment> "Cabecilla de la familia Peaky Blinders" .
+<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ThomasShelby> <http://www.w3.org/2000/01/rdf-schema#label> "Thomas Shelby" .
 # 
 # http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#UnitedKingdom
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#UnitedKingdom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#UnitedKingdom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Country> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#UnitedKingdom> <http://www.w3.org/2000/01/rdf-schema#comment> "País donde sucede la trama" .
+<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#UnitedKingdom> <http://www.w3.org/2000/01/rdf-schema#label> "United Kingdom" .
 # 
 # http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ValorMedal
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ValorMedal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ValorMedal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Medal> .
 <http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ValorMedal> <http://www.w3.org/2000/01/rdf-schema#comment> "Medalla de reconocimiento tras participar en la guerra" .
+<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ValorMedal> <http://www.w3.org/2000/01/rdf-schema#label> "Valor Medal" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Location> <http://www.w3.org/2000/01/rdf-schema#comment> "Representa una localización" .
+<http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Location> <http://www.w3.org/2000/01/rdf-schema#label> "Location" .
 # 
 # 
 # 

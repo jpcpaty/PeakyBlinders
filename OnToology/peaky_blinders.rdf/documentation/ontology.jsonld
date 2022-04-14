@@ -200,14 +200,13 @@
 }, {
   "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Amount",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Representa una cantidad"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Object"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Amount"
+  }, {
+    "@value" : "Indica una cantidad"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#int"
@@ -217,8 +216,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Representa aquellas formas animales"
-  }, {
-    "@value" : "class that defines animals"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Animal"
@@ -260,6 +257,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Arthur es el hermano mayor de la familia Shelby."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Arthur Shelby"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#BSA",
@@ -272,6 +272,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Fabrica donde se almacenaba el pedido de armas y donde trabaja el sindicalista Freddie Thorne"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "BSA"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Birmingham",
@@ -287,6 +290,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Ciudad de inglaterra donde se desarrolla la trama."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Birmingham"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#BossOfFamily",
@@ -311,6 +317,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Investigador de la policia enviado a Birmingham para esclarecer el robo de las armas y limpiar la ciudad de delincuencia."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Chester Campbell"
   } ],
   "http://xmlns.com/foaf/0.1/knows" : [ {
     "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ArthurShelby"
@@ -348,7 +357,7 @@
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Content",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#SymmetricProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Representa la relación entre un objeto y el contenido de este"
   } ],
@@ -359,43 +368,7 @@
     "@value" : "Content"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Thing"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ContentObject",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#SymmetricProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Representa el contenido de un objeto"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Object"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Content Object"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Object"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Content"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ContentRobery",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Representa el contenido de un robo"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Stealing"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Content Robery"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Object"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Content"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ControledBy",
@@ -420,12 +393,15 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Location"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#DateEnd",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Representa una fecha final"
+    "@value" : "Indica una fecha final"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Event"
@@ -440,7 +416,7 @@
   "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#DateInit",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Representa una fecha de inicio"
+    "@value" : "Indica una fecha de inicio"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Event"
@@ -532,7 +508,7 @@
 }, {
   "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#FactoryRobbery",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ContentRobery" : [ {
+  "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Content" : [ {
     "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#LibiaShipping"
   } ],
   "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#InvestigatedBy" : [ {
@@ -542,12 +518,13 @@
     "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#PeakyBlinders"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Event"
-  }, {
     "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Stealing"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Representa el robo de armas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Factory Robbery"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Family",
@@ -574,6 +551,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Miembro de la familia Peaky Blinders, hermano de Arthur y Thomas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Finn Shelby"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#FirstWorldWar",
@@ -591,6 +571,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Representa el evento de la primera guerra mundial donde participaron Arthur, Thomas y Freddie"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "First World War"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#FreddieThorne",
@@ -606,6 +589,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Sindicalista y trabajador de la fábrica BSA"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Freddie Thorne"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Gangster",
@@ -632,7 +618,7 @@
     "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Family"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Guns",
+  "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Gun",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Amount" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#integer",
@@ -643,6 +629,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Pistolas del pedido de armas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Gun"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Horse",
@@ -657,7 +646,22 @@
     "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Animal"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#HorseRace",
+  "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#HorseRaceWinner",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Representa la relación del caballo ganador en una carrera de caballos"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Horse_race"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Horse Race Winner"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Horse"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Horse_race",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Representa una carrera de caballos"
@@ -667,21 +671,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Event"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#HorseRaceWinner",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Representa la relación del caballo ganador en una carrera de caballos"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#HorseRace"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Horse Race Winner"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Horse"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Inspector",
@@ -697,7 +686,7 @@
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#InvestigatedBy",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Representa la relación de investigación de un robo por parte de un policia."
   } ],
@@ -730,16 +719,19 @@
     "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#MonahamBoy"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#HorseRace"
+    "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Horse_race"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Representa el evento de la carrera de caballos en el hipodromo de Kempton"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Kempton Horse Race"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#LibiaShipping",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ContentObject" : [ {
-    "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Guns"
+  "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Content" : [ {
+    "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Gun"
   }, {
     "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#LouisMachineGun"
   }, {
@@ -753,6 +745,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Representa el pedido de armas preparado para envio a Libia desde la fabrica BSA"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Libia Shipping"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#LivingBeing",
@@ -765,7 +760,7 @@
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Location",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#SymmetricProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Representa una localización"
   } ],
@@ -776,13 +771,13 @@
     "@value" : "Location"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Location"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#LocationCity",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Localización de una ciudad"
+    "@value" : "Representa una localización de ciudad"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Thing"
@@ -800,7 +795,7 @@
   "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#LocationRobbery",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Representa la localización de un robo"
+    "@value" : "Representa una localización de un robo"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Object"
@@ -826,6 +821,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Ametralladoras del pedido de armas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Louis Machine Gun"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#MachineGun",
@@ -884,6 +882,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Caballo de carreras de la familia Peaky Blinders"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Monaham Boy"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Munition",
@@ -909,6 +910,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Cintas de munición del pedido de armas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Munition Tape"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Object",
@@ -935,6 +939,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Familia de gangsters ubicados en Birmingham"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Peaky Blinders"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Person",
@@ -964,7 +971,7 @@
   "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#RaceWon",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Representa la cantidad de carreras ganadas"
+    "@value" : "Indica el número de carreras ganadas"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Horse"
@@ -998,6 +1005,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Barrio desde donde operan principalmente los Peaky Blinders"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Small Heath"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Stealing",
@@ -1045,6 +1055,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Cabecilla de la familia Peaky Blinders"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Thomas Shelby"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#UnitedKingdom",
@@ -1054,6 +1067,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "País donde sucede la trama"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "United Kingdom"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ValorMedal",
@@ -1063,6 +1079,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Medalla de reconocimiento tras participar en la guerra"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Valor Medal"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#War",
@@ -1138,6 +1157,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Workplace"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Location"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#autors",

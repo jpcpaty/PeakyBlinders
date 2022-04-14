@@ -28,9 +28,6 @@
     "Thing" : {
       "@id" : "http://www.w3.org/2002/07/owl#Thing"
     },
-    "HorseRace" : {
-      "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#HorseRace"
-    },
     "District" : {
       "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#District"
     },
@@ -108,6 +105,9 @@
       "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#MemberOfFamily",
       "@type" : "@id"
     },
+    "Horse_race" : {
+      "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Horse_race"
+    },
     "knows" : {
       "@id" : "http://xmlns.com/foaf/0.1/knows",
       "@type" : "@id"
@@ -143,10 +143,6 @@
     },
     "InvestigatedBy" : {
       "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#InvestigatedBy",
-      "@type" : "@id"
-    },
-    "ContentRobery" : {
-      "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ContentRobery",
       "@type" : "@id"
     },
     "DateEnd" : {
@@ -187,10 +183,6 @@
     },
     "Personne" : {
       "@id" : "http://cedric.cnam.fr/isid/ontologies/PersonLink.owl#Personne"
-    },
-    "ContentObject" : {
-      "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#ContentObject",
-      "@type" : "@id"
     },
     "Stealing" : {
       "@id" : "http://www.semanticweb.org/jpc_p/ontologies/2022/2/peaky-blinders#Stealing"
